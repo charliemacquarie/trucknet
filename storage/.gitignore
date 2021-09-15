@@ -1,0 +1,8 @@
+# ignore all contents of storage dir
+*
+
+# Except these files
+!.gitignore
+!.htaccess
+!header.html
+!footer.html
