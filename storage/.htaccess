@@ -1,0 +1,36 @@
+# ENABLE DIRECTORY VIEW FOR STORAGE DIRECTORY
+
+Options +Indexes
+
+# STRONG HTACCESS PROTECTION
+
+<Files ~ "^.*\.([Hh][Tt][Aa])">
+order allow,deny
+deny from all
+</Files>
+
+# DIRECTORY CUSTOMIZATION
+
+<IfModule mod_autoindex.c>
+
+# SET INDEX OPTIONS
+
+IndexOptions IgnoreCase FancyIndexing NameWidth=* DescriptionWidth=*
+
+# SPECIFY HEADER FILE
+
+HeaderName "/storage/header.html"
+
+# SPECIFY FOOTER FILE
+
+ReadmeName "/storage/footer.html"
+
+# SPECIFY CSS STYLE
+
+IndexStyleSheet "/assets/storagestyle.css"
+
+# IGNORE THESE FILES
+
+IndexIgnore header.html footer.html .htaccess
+
+</IfModule>
