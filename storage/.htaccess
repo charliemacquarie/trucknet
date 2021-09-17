@@ -15,7 +15,7 @@ deny from all
 
 # SET INDEX OPTIONS
 
-IndexOptions IgnoreCase FancyIndexing NameWidth=* DescriptionWidth=*
+IndexOptions IgnoreCase FancyIndexing NameWidth=* DescriptionWidth=* SuppressHTMLPreamble SuppressDescription
 
 # SPECIFY HEADER FILE
 
